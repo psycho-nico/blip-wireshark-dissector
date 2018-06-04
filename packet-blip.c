@@ -258,7 +258,7 @@ dissect_blip(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree, void *data)
         proto_tree_add_item(blip_tree, hf_blip_properties, tvb_child, 0, (guint) value_properties_length, ENC_UTF_8);
 
         // Bump the offset by the length of the properties
-        offset += (gint)gvalue_properties_length;
+        offset += (gint)value_properties_length;
         printf("new offset: %d\n", offset);
 
 
